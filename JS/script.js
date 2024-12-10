@@ -42,27 +42,55 @@
 // }
 // console.log(positiveNumbers);
 
-let firstArray = [1, 2, 3, 4, 3, 5];
-let element = 3;
+// let firstArray = [1, 2, 3, 4, 3, 5];
+// let element = 3;
 
-let noDuplicates = new Set(firstArray);
-let numbsWithoutDuplicates = [...noDuplicates];
-console.log(numbsWithoutDuplicates);
+// let noDuplicates = new Set(firstArray);
+// let numbsWithoutDuplicates = [...noDuplicates];
+// console.log(numbsWithoutDuplicates);
 
- for (let i = 0; i < numbsWithoutDuplicates.length; i++){ 
- }
+//  for (let i = 0; i < numbsWithoutDuplicates.length; i++){ 
+//  }
 
- for (let i = 0; i < firstArray.length; i++){  
- }
+//  for (let i = 0; i < firstArray.length; i++){  
+//  }
 
- let noDuplicatesArrayLength = numbsWithoutDuplicates.length;
- let firstArrayLength = firstArray.length;
+//  let noDuplicatesArrayLength = numbsWithoutDuplicates.length;
+//  let firstArrayLength = firstArray.length;
 
- console.log(noDuplicatesArrayLength)
- console.log(firstArrayLength)
+//  console.log(noDuplicatesArrayLength)
+//  console.log(firstArrayLength)
 
- if (firstArrayLength !== noDuplicatesArrayLength){
-    console.log('True, elementas pasikartoja')   
- } else{
-    console.log('False, elementas nepasikartoja')
+//  if (firstArrayLength !== noDuplicatesArrayLength){
+//     console.log('True, elementas pasikartoja')   
+//  } else{
+//     console.log('False, elementas nepasikartoja')
+// }
+
+let initialArray = [1, 2, 3, 4, 5];
+console.log(initialArray);
+
+for(let i = 0; i < initialArray.length; i++){
+    // console.log(initialArray[i]);
+
+    let arrayNumber = initialArray[i];
+
+    if (arrayNumber % 2 !== 0) {
+        
+        arrayNumber = arrayNumber * 3;
+        
+    } else if (arrayNumber % 2 === 0) {
+        arrayNumber = arrayNumber / 2;
+    }
+
+    initialArray[i] = arrayNumber;
+    
 }
+
+for(let i = 0; i < initialArray.length; i++){
+    console.log(initialArray[i])
+}
+
+
+
+
