@@ -41,3 +41,28 @@
 //     } 
 // }
 // console.log(positiveNumbers);
+
+let firstArray = [1, 2, 3, 4, 3, 5];
+let element = 3;
+
+let noDuplicates = new Set(firstArray);
+let numbsWithoutDuplicates = [...noDuplicates];
+console.log(numbsWithoutDuplicates);
+
+ for (let i = 0; i < numbsWithoutDuplicates.length; i++){ 
+ }
+
+ for (let i = 0; i < firstArray.length; i++){  
+ }
+
+ let noDuplicatesArrayLength = numbsWithoutDuplicates.length;
+ let firstArrayLength = firstArray.length;
+
+ console.log(noDuplicatesArrayLength)
+ console.log(firstArrayLength)
+
+ if (firstArrayLength !== noDuplicatesArrayLength){
+    console.log('True, elementas pasikartoja')   
+ } else{
+    console.log('False, elementas nepasikartoja')
+}
